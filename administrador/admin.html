@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Administración</title>
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+
+<nav>
+    <a href="admin.html">Gestión</a>
+    <a href="../index.html">Salir</a>
+</nav>
+
+<h2>Gestión del Menú</h2>
+
+<form onsubmit="agregar(event)">
+    <input id="nombre" placeholder="Nombre del producto">
+    <input id="precio" placeholder="Precio">
+    <input id="foto" placeholder="URL de imagen">
+    <button type="submit">Agregar</button>
+</form>
+
+<h3>Productos actuales</h3>
+<div id="lista"></div>
+
+<script src="admin.js"></script>
+</body>
+</html>
